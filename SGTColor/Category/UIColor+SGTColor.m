@@ -11,19 +11,39 @@
 @implementation UIColor (SGTColor)
 
 + (NSString*)convertUIColorToNSString: (UIColor*)color {
+	NSString *c = @"Invalid colour";
+
 	if ([color isEqual:[UIColor redColor]]) {
-		return @"Red";
+		c = @"Red";
 	}
 	
 	if ([color isEqual:[UIColor greenColor]]) {
-		return @"Green";
+		c = @"Green";
 	}
 	
 	if ([color isEqual:[UIColor blueColor]]) {
-		return @"Blue";
+		c = @"Blue";
 	}
 	
-	return @"Invalid color";
+	return c;
+}
+
++ (UIColor*)convertNSStringToUIColor: (NSString*)color {
+	UIColor *c;
+
+	if ([color isEqualToString:@"Red"] || [color isEqualToString:@"red"]) {
+		c = [UIColor redColor];
+	}
+	
+	if ([color isEqualToString:@"Green"] || [color isEqualToString:@"green"]) {
+		c = [UIColor greenColor];
+	}
+	
+	if ([color isEqualToString:@"Blue"] || [color isEqualToString:@"blue"]) {
+		c = [UIColor blueColor];
+	}
+	
+	return c;
 }
 
 @end

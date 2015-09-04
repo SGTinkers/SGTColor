@@ -11,5 +11,6 @@
 @interface UIColor (SGTColor)
 
 + (NSString*)convertUIColorToNSString: (UIColor*)color;
++ (UIColor*)convertNSStringToUIColor: (NSString*)color;
 
 @end

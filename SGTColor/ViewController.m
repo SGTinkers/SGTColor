@@ -18,6 +18,10 @@
 	[super viewDidLoad];
 	
 	NSLog(@"%@", [UIColor convertUIColorToNSString:[UIColor redColor]]);
+	
+	UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 10, 50, 50)];
+	[label setBackgroundColor:[UIColor convertNSStringToUIColor:@"Red"]];
+	[self.view addSubview:label];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
