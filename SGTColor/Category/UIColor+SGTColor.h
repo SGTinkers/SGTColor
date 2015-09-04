@@ -13,4 +13,6 @@
 + (NSString*)convertUIColorToNSString: (UIColor*)color;
 + (UIColor*)convertNSStringToUIColor: (NSString*)color;
 
++ (NSArray*)getColors;
+
 @end

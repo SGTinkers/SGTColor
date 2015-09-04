@@ -46,4 +46,25 @@
 	return c;
 }
 
++ (NSArray*)getColors {
+	NSArray *colorArr = [NSArray arrayWithObjects:
+						 [UIColor redColor],
+						 [UIColor greenColor],
+						 [UIColor blueColor],
+						 [UIColor grayColor],
+						 [UIColor orangeColor],
+						 [UIColor brownColor],
+						 [UIColor blackColor],
+						 [UIColor darkGrayColor],
+						 [UIColor lightGrayColor],
+						 [UIColor whiteColor],
+						 [UIColor cyanColor],
+						 [UIColor yellowColor],
+						 [UIColor magentaColor],
+						 [UIColor purpleColor],
+						 [UIColor brownColor],
+						 nil];
+	return colorArr;
+}
+
 @end
